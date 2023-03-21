@@ -5,6 +5,7 @@
     background-image: linear-gradient(to top left,
     blueviolet 0%, #bf2e34 100%);
     background-color: white;
+    overflow: hidden;
 }
 body{
     height: 100vh;
@@ -13,8 +14,8 @@ body{
     align-items: center;
 }
 .clock{
-    width: 40rem;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
     border:5px solid;
     border-radius: 50%;
     background:url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg") center;
@@ -26,9 +27,12 @@ body{
     top: 50%;
     left: 50%;
     height: 12rem;
-    width: .1rem;
+    width: .3rem;
     transform: translateX(-50%);
     transform-origin: 25% 0 ;
+    background:linear-gradient(to top left,
+    rgb(80, 10, 146) 0%, #af171c 100%);
+
 }
 .mins{
     position: absolute;
@@ -38,6 +42,8 @@ body{
     width: .3rem;
     transform: translateX(-50%);
     transform-origin: 25% 0 ;
+    background:linear-gradient(to top left,
+    rgb(80, 10, 146) 0%, #af171c 100%);
 }
 .hours{
     position: absolute;
@@ -48,6 +54,8 @@ body{
     border-radius: 15px;
     transform: translateX(-50%);
     transform-origin: 25% 0 ;
+    background:linear-gradient(to top left,
+    rgb(80, 10, 146) 0%, #af171c 100%);
 }
 .dot{
     position: absolute;
@@ -56,6 +64,9 @@ body{
     height: 1rem;
     width: 1rem;
     border-radius: 50px;
-    transform: translateX(-50%);
+    /* transform: translateX(27%);  */
+    transform: translateY(-50%);
+    background:linear-gradient(to top left,
+    rgb(80, 10, 146) 0%, #af171c 100%);
     
 }
